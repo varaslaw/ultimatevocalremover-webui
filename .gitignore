@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+
+# Program data
+*.csv
+*.pkl
+
+# models
+*.pth
+*.onnx

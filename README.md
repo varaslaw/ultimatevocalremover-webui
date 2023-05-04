@@ -1,4 +1,23 @@
-# Ultimate Vocal Remover GUI v5.5.1
+# Ultimate Vocal Remover WebUI
+
+WebUI for Ultimate Vocal Remover implempted with `gradio`.
+
+## Usage
+- clone this repository
+- install ffmpeg
+- run `pip install -r requirements.txt` to install the required Python packages
+- run `python webUI.py` to start the WebUI
+
+## Adding models
+
+You can acquire URL of the models in the settings->Download models panel. After downloading the models, move them to corresponding architecture directory in `models/*_Models`.
+
+The development is ongoing to adapt full function of UVR. VR and MDX architecture are available by now.
+
+---
+
+The original readme of [Anjok07/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui):
+
 <img src="https://raw.githubusercontent.com/Anjok07/ultimatevocalremovergui/master/gui_data/img/UVR_5_5_1.png?raw=true" />
 
 [![Release](https://img.shields.io/github/release/anjok07/ultimatevocalremovergui.svg)](https://github.com/anjok07/ultimatevocalremovergui/releases/latest)

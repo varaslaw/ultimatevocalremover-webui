@@ -150,6 +150,7 @@ class UVRWebUI:
     def define_layout(self):
         with gr.Blocks() as app:
             self.app = app
+            gr.Markdown("# UVR | https://t.me/aisingers", style={"text-align": "center", "color": "white"})
             with gr.Tabs():
                 with gr.TabItem("process"):
                     with gr.Row():
@@ -243,8 +244,7 @@ class UVRWebUI:
                 outputs=[self.primary_stem_out, self.secondary_stem_out, self.out_message])
 
     def launch(self, **kwargs):
-        self.app.queue().launch(**kwargs)
-
+        self.app.queue().launch(share=True, **kwargs)
 
 uvr = UVRInterface()
 uvr.cached_sources_clear()
